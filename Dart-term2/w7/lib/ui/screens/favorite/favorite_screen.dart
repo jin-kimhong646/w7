@@ -55,7 +55,7 @@ class SongTile extends StatelessWidget {
   const SongTile({
     super.key,
     required this.song,
-    required this.isPlaying,
+    required this.isPlaying, required void Function() onTap, required void Function() onRightTap,
   });
 
   final Song song;
